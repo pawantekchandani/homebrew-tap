@@ -1,0 +1,21 @@
+name: tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  formula:
+    runs-on: macos-latest
+    steps:
+      - uses: Homebrew/actions/setup-homebrew@master
+      - name: Audit, install and test
+        run: |
+          brew audit --strict pawantekchandani/tap/zero-eyes
+          brew install pawantekchandani/tap/zero-eyes
+          brew test pawantekchandani/tap/zero-eyes
+          test -x "$(brew --prefix)/bin/zero-eyes-setup"
