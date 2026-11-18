@@ -1,8 +1,8 @@
 class ZeroEyes < Formula
   desc "Read AI coding agent answers aloud on macOS"
   homepage "https://github.com/pawantekchandani/zero-eyes"
-  url "https://github.com/pawantekchandani/zero-eyes/archive/refs/tags/v1.0.0.tar.gz"
-  sha256 "8becb2916c0844e070d572dfe648e6ef0adf9ac09092bc8dc0bf1e8f79941e04"
+  url "https://github.com/pawantekchandani/zero-eyes/archive/refs/tags/v1.1.0.tar.gz"
+  sha256 "b6105bb8c7838f755ce5f89737ad93fc16d373f5b76f9e09f87da5407d8b043f"
   license "MIT"
 
   depends_on :macos
